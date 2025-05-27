@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Login from './Login'
+import Acerca from './Acerca'
 import './App.css'
 
 function App() {
@@ -69,13 +70,19 @@ function App() {
               </form>
             )}
             <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
-              <a href="/login" style={{ color: '#646cff', textDecoration: 'underline', fontWeight: 500 }}>
+              <Link to="/login" style={{ color: '#646cff', textDecoration: 'underline', fontWeight: 500 }}>
                 ¿Ya tienes cuenta? Inicia sesión
-              </a>
+              </Link>
+            </div>
+            <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+              <Link to="/acerca" style={{ color: '#888', textDecoration: 'underline', fontWeight: 400 }}>
+                Acerca del proyecto
+              </Link>
             </div>
           </div>
         } />
         <Route path="/login" element={<Login />} />
+        <Route path="/acerca" element={<Acerca />} />
       </Routes>
     </Router>
   )

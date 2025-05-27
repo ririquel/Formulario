@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 
 function Login() {
@@ -52,9 +53,14 @@ function Login() {
         </form>
       )}
       <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
-        <a href="/" style={{ color: '#646cff', textDecoration: 'underline', fontWeight: 500 }}>
+        <Link to="/" style={{ color: '#646cff', textDecoration: 'underline', fontWeight: 500 }}>
           ¿No tienes cuenta? Regístrate
-        </a>
+        </Link>
+      </div>
+      <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+        <Link to="/acerca" style={{ color: '#888', textDecoration: 'underline', fontWeight: 400 }}>
+          Acerca del proyecto
+        </Link>
       </div>
     </div>
   )
