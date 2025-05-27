@@ -1,0 +1,120 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #646cff;
+}
+
+.register-form div {
+  margin-bottom: 1.2rem;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.register-form input:focus {
+  border: 1.5px solid #646cff;
+  outline: none;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #646cff 60%, #61dafb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.register-form button:hover {
+  background: linear-gradient(90deg, #4b50c7 60%, #21b6e6 100%);
+}
+
+.success-message {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #e7fbe7;
+  border-radius: 10px;
+  color: #2e7d32;
+  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.08);
+}
+
+.success-message ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.success-message li {
+  margin-bottom: 0.5rem;
+}
